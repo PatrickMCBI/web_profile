@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f4f4a2;
+
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 15px 100px;
+    position: fixed;
+    width: 100%;
+}
+.header.fixed{
+    border-bottom: 2px solid #b5b511;
+
+    background-color: #f4f4a2;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+.header a:hover{
+    color: #029fe0;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-cont{
+    /* background-color: gray; */
+    max-width: 500px;
+}
+.home-cont h1{
+    font-size: 50px;
+}
+.home-cont h3{
+    font-size: 30px;
+}
+.home-cont p{
+    padding: 10px 0;
+}
+.btn-cont{
+    display: grid;
+    grid-column-gap: 15px;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+
+}
+.btn-cont a{
+    /* height: 35px; */
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #029fe0;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+.group-input{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    margin-bottom: 15px;
+}
+.group-textarea{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    margin-bottom: 15px;
+}
+.group-input input{
+    width: 100%;
+    height: 35px;
+    text-indent: 5px;
+    padding: 5px;
+    outline: none;
+}
+.group-textarea textarea{
+    width: 100%;
+    text-indent: 5px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+}
+.contact-cont-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-cont-top h2{
+    text-align: center;
+    padding: 15px;
+}
+.contact-cont{
+    /* background-color: #8f8c8c; */
+}
+.align-mid{
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 8%;
+}
+.contact-form-cont{
+    padding: 0 35px 35px 35px;
+}
+.send-btn{
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+    border:none;
+    background-color: #ffffff;
+}
+.send-btn:hover{
+    background-color: #029fe0;
+    color: #fff;
+}
+.social-media-cont{
+    display: flex;
+    gap:30px;
+    margin-top: 50px;
+    justify-content: end;
+}
+.social-media-cont .facebook,.linkedin,.instagram{
+    width: 25px;
+}
+.facebook svg{
+    fill: #3b5998;
+}
+.facebook svg:hover{
+    fill: #1877f2;
+}
+
+.linkedin svg{
+    fill: #0077B5;
+}
+.linkedin svg:hover{
+    fill: #2867B2;
+}
+
+.instagram svg{
+    fill: #C13584;
+}
+.instagram svg:hover{
+    fill: #8a3ab9;
+}
+.service-sub{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+.service-img-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; row-gap: 10px;
+}
+.service-img-cont h4{
+    font-size: 15px;
+}
+.flex-gap50{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+/* #region --loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+#loading-spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading-text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* #endregion  */
+
+/* Customize the alert styles here */
+.alert-cont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+.alert-success {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 15px;
+}
+.alert-error {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Add a close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
