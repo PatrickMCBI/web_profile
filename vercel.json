@@ -1,0 +1,11 @@
+{
+    "builds":[{
+        "src": "web_profile/wsgi.py",
+        "use": "@vervel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
+    }],
+    "routes":[{
+        "src": "/(.*)",
+        "dest" : "web_profile/wsgi.py"
+    }]
+}
