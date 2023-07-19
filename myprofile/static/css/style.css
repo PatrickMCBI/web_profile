@@ -261,3 +261,34 @@ body{
 .closebtn:hover {
     color: black;
 }
+
+/* For devices up to 768px wide (e.g., mobile phones) */
+@media (max-width: 768px) {
+    /* Your CSS rules for smaller devices here */
+    .contact-cont-top{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contact-form-cont{
+        padding: 0 0px 35px 0px;
+    }
+    .service-sub{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        row-gap: 20px;
+    }
+    .service-img-cont{
+        row-gap: 0px;
+    }
+    .home{
+        align-items: start;
+        padding: 40px 15px;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+    .header{
+        padding: 15px 30px;
+    }
+}
