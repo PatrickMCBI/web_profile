@@ -17,7 +17,7 @@ body{
     width: 100%;
 }
 .header.fixed{
-    border-bottom: 2px solid #b5b511;
+    border-bottom: 2px solid #029fe0;
 
     background-color: #f4f4a2;
 }
@@ -77,6 +77,9 @@ body{
     text-align: center;
     padding: 10px;
 }
+.btn-cont a:hover{
+    color: #f4f4a2;
+}
 .group-input{
     display: grid;
     grid-template-rows: 1fr;
@@ -127,11 +130,11 @@ body{
     height: 25px;
     cursor: pointer;
     border:none;
-    background-color: #ffffff;
-}
-.send-btn:hover{
     background-color: #029fe0;
     color: #fff;
+}
+.send-btn:hover{
+    color: #f4f4a2;
 }
 .social-media-cont{
     display: flex;
@@ -261,6 +264,22 @@ body{
 .closebtn:hover {
     color: black;
 }
+.collab-cont{
+    margin-top: 35px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center; 
+    gap:45px;
+}
+.collab-img-cont{
+    background-color: #fff;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* For devices up to 768px wide (e.g., mobile phones) */
 @media (max-width: 768px) {
@@ -296,5 +315,9 @@ body{
     }
     .btn-cont{
         margin-top: 68%;
+    }
+    .collab-cont{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
