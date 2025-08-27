@@ -280,7 +280,17 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.portfolio-cont{
+    margin: 50px 0;
+}
+.collab-img-client{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 355px;
+}
 /* For devices up to 768px wide (e.g., mobile phones) */
 @media (max-width: 768px) {
     /* Your CSS rules for smaller devices here */
